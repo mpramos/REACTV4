@@ -1,13 +1,17 @@
 import React from 'react'
 
-const Header = () => {
+const Header = (props) => {
+   
   return (
    <>
-   <h1>Bienvenidos a la especialidad de React</h1>
-   <h2>Iniciando con React</h2>
-   <h3>React es una libreria de JavaScript</h3>
-   <p>Academia Evolutech Parter de Cisco</p>
-   <small>9/4/2025</small>
+   {console.log(props)}
+   <h1>{props.bienvenida}</h1>
+   <h2>{props.titulo}</h2>
+   <h3>{props.subtitulo}</h3>
+   <p>
+      Academia : {props.autor.nombre} {props.autor.partner}
+   </p>
+   <small>9/4/{props.año}</small>
    </>
   )
 }
