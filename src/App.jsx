@@ -28,6 +28,10 @@ function App() {
 
   const handleSaludo=(nombre)=>alert(`Hola!, ${nombre} Bienvenidos a la clase de React`)
 
+  const Skill=({skill})=><p>{skill}</p>
+
+  const Skills =({skills})=>skills.map((skill,index)=><Skill key={index} skill={skill}></Skill>)
+
 
   return (
     <>
@@ -37,6 +41,7 @@ function App() {
     <ObjectProp usuario={usuario}/>
     <ArrayProps hobbies={hoobies}/>
    <FuncionProp saludar={handleSaludo}/> 
+   <Skills skills={['HTML','CSS','JAVASCRIPT','REACT']}/>
     
     {/* <Header 
       bienvenida={bienvenida}

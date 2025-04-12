@@ -11,7 +11,7 @@ const QuizSimple = () => {
           <ul>
             <li>A) Estilos aplicados a los componentes</li>
             <li>B) Funciones internas de React</li>
-            <li>C) Datos que se pasan de un componente padre a uno hijo </li>
+            <li>C) Datos que se pasan de un componente padre a uno hijo 🐱‍👤✔ </li>
             <li>D) Eventos personalizados</li>
           </ul>
         </li>
@@ -21,17 +21,17 @@ const QuizSimple = () => {
           <ul>
             <li>A) function Componente(props) { props.titulo }</li>
             <li>B) const Componente = (props) => props.titulo</li>
-            <li>C) const Componente = &#123; titulo &#125; => &lt;p&gt;&#123;titulo&#125;&lt;/p&gt;</li>
-            <li>D) const Componente = (&#123; titulo &#125;) => &lt;p&gt;&#123;titulo&#125;&lt;/p&gt; ✅</li>
+            <li>C) const Componente = { titulo } => <li>{titulo}</li>
+            <li>D) const Componente = ({ titulo }) =>  <li>{titulo}</li> ✔
           </ul>
         </li>
 
         <li>
-          ¿Qué tipo de dato es esta prop: hobbies=&#123;['leer', 'dibujar']&#125;?
+          ¿Qué tipo de dato es esta prop: hobbies={['leer', 'dibujar']};?
           <ul>
             <li>A) String</li>
             <li>B) Objeto</li>
-            <li>C) Array </li>
+            <li>C) Array </li> ✔
             <li>D) Booleano</li>
           </ul>
         </li>
@@ -41,8 +41,7 @@ const QuizSimple = () => {
           <ul>
             <li>A) funcion={() => {}}</li>
             <li>B) saludar={() => alert('Hola')}</li>
-            <li>C) &lt;Componente saludar={() => alert('Hola')} /&gt; </li>
-            <li>D) &lt;Componente&gt;{`() => alert('Hola')`}&lt;/Componente&gt;</li>
+            <li>C) <Componente saludar={() => alert('Hola')} /> </li> ✔
           </ul>
         </li>
 
@@ -51,7 +50,7 @@ const QuizSimple = () => {
           <ul>
             <li>A) Hace que el código sea más lento</li>
             <li>B) Ayuda a aplicar estilos automáticamente</li>
-            <li>C) Mejora la legibilidad y acceso directo a los valores </li>
+            <li>C) Mejora la legibilidad y acceso directo a los valores </li> ✔
             <li>D) Es obligatoria en todos los componentes</li>
           </ul>
         </li>
