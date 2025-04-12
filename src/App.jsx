@@ -5,6 +5,12 @@ import './App.css'
 import Header from './Header'
 import Principal from './Principal'
 import Button from './Button'
+import StringProps from './props/StringProps'
+import NumberProps from './props/NumberProps'
+import BooleanProp from './props/BooleanProp'
+import ObjectProp from './props/ObjectProp'
+import ArrayProps from './props/ArrayProps'
+import FuncionProp from './props/FuncionProp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,9 +23,22 @@ function App() {
       partner:'Cisco'
   }
   let año= new Date().getFullYear()
+  const usuario={nombre:'Ximena', imagen:'👩‍🦰', pais:'Argentina'}
+  const hoobies=['Leer', 'Programar','Caminar','Bailar']
+
+  const handleSaludo=(nombre)=>alert(`Hola!, ${nombre} Bienvenidos a la clase de React`)
+
+
   return (
     <>
-    <Header 
+    <StringProps mensaje='Hola mundo desde props!'/>
+    <NumberProps edad={25}/>
+    <BooleanProp esEstudiante={true}/>
+    <ObjectProp usuario={usuario}/>
+    <ArrayProps hobbies={hoobies}/>
+   <FuncionProp saludar={handleSaludo}/> 
+    
+    {/* <Header 
       bienvenida={bienvenida}
       titulo={titulo}
       subtitulo={subtitulo}
@@ -48,7 +67,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      {parrafo}
+      {parrafo} */}
     </>
   )
 }
