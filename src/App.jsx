@@ -12,6 +12,7 @@ import ObjectProp from './props/ObjectProp'
 import ArrayProps from './props/ArrayProps'
 import FuncionProp from './props/FuncionProp'
 import Desestructuracion from './Desestructuracion'
+import HooksDemo from './hooks/HooksDemo'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -44,6 +45,7 @@ function App() {
    <FuncionProp saludar={handleSaludo}/> 
    <Skills skills={['HTML','CSS','JAVASCRIPT','REACT']}/>
     <Desestructuracion/>
+    <HooksDemo/>
     {/* <Header 
       bienvenida={bienvenida}
       titulo={titulo}
