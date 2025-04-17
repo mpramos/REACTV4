@@ -11,6 +11,7 @@ import BooleanProp from './props/BooleanProp'
 import ObjectProp from './props/ObjectProp'
 import ArrayProps from './props/ArrayProps'
 import FuncionProp from './props/FuncionProp'
+import Desestructuracion from './Desestructuracion'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -42,7 +43,7 @@ function App() {
     <ArrayProps hobbies={hoobies}/>
    <FuncionProp saludar={handleSaludo}/> 
    <Skills skills={['HTML','CSS','JAVASCRIPT','REACT']}/>
-    
+    <Desestructuracion/>
     {/* <Header 
       bienvenida={bienvenida}
       titulo={titulo}
