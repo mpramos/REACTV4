@@ -13,6 +13,8 @@ import ArrayProps from './props/ArrayProps'
 import FuncionProp from './props/FuncionProp'
 import Desestructuracion from './Desestructuracion'
 import HooksDemo from './hooks/HooksDemo'
+import InputSimple from './forms/InputSimple'
+import FormularioMultiple from './forms/FormularioMultiple'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -76,6 +78,8 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       {parrafo} */}
+      <InputSimple/>
+      <FormularioMultiple/>
     </>
   )
 }
