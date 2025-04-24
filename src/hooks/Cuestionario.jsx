@@ -56,8 +56,48 @@ console.log("Hola");
                         <li>D) Se ejecuta al cerrar el componente</li>
                     </ul>
                 </li>
-            </ol>
 
+                <li>
+                ¿Cuál hook usarías para evitar pasar props manualmente entre muchos componentes?
+                        <ul>
+                            <li>A. useRef</li>
+                            <li>B. useContext</li> ✅
+                            <li>C. useEffect</li>
+                        </ul>
+                </li>
+                <li>
+                ¿Qué hook se usa para acceder directamente al DOM?
+                <ul>
+                            <li>A. useReducer</li>
+                            <li>B. useState</li>
+                            <li>C. useRef</li> ✅
+                        </ul>
+                </li>
+                <li>
+                ¿Cuál es útil cuando tienes muchas acciones que afectan el mismo estado?
+                <ul>
+                            <li>A. useReducer</li> ✅
+                            <li>B. useEffect</li>
+                            <li>C. useContext</li>
+                        </ul>
+                </li>
+                <li>
+                ¿Qué NO hace useRef?
+                <ul>
+                            <li>A. Guarda valores entre renders</li>
+                            <li>B. Provoca re-render al cambiar</li> ✅
+                            <li>C. Puede apuntar a los elementos del DOM</li>
+                        </ul>
+                </li>
+                <li>
+                ¿Cuál de estos hooks sería ideal para manejar un modo claro/oscuro en una app?
+                <ul>
+                            <li>A. useReducer</li>
+                            <li>B.useRef</li>
+                            <li>C.useContext</li> ✅
+                        </ul>
+                </li>
+            </ol>
         </div>
     )
 }
