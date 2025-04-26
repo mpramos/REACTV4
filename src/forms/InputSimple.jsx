@@ -8,13 +8,15 @@ const InputSimple = () => {
     const [nombre, setNombre]= useState("")
 
     const manejarCambio=(e)=>{
+      console.log( 'target', e.target.name)
             setNombre(e.target.value)
     }
     
   return (
     <div>
+      <h3>FORMULARIO SIMPLE</h3>
         <label >Nombre:</label>
-        <input type="text" onChange={manejarCambio} value={nombre}/>
+        <input type="text" onChange={manejarCambio} value={nombre} name='nombre'/>
         <p> Tu nombre es :{nombre}</p>
     </div>
   )
