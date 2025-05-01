@@ -21,9 +21,10 @@ const FormularioMultiple = () => {
                 ...formulario,
                 [name]: type ==="checkbox" ? checked:value
             }
-        );
+        )
         
 }
+
   return (
     <>
     <h3>FORMULARIO MULTIPLE</h3>
@@ -45,7 +46,7 @@ const FormularioMultiple = () => {
                 name="genero" 
                 value={formulario.genero}
                 onChange={manejarCambio}  >
-                <option value="femenino">Femenino</option>
+                <option  value="femenino">Femenino</option>
                 <option value="masculino">Masculino</option>
                 <option value="otro">Otro</option>
             </select>
