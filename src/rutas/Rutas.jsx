@@ -1,5 +1,9 @@
 import React from 'react'
 import { Routes, Route , Link } from 'react-router-dom'
+import Inicio from './Inicio'
+import Acerca from './Acerca'
+import Contacto from './Contacto'
+import BotonLogin from './BotonLogin'
 
 const Rutas = () => {
   return (
@@ -14,10 +18,13 @@ const Rutas = () => {
                 </ul>
             </nav>
             <Routes>
-                <Route path="/" element={<h2>Bienvenido a la página de inicio</h2>} />
-                <Route path="/acerca" element={<h2>Estos son nuestros productos</h2>} />
-                <Route path="/contacto" element={<h2>Contáctanos</h2>} />
-           </Routes>     
+                <Route path="/" element={<Inicio/>} />
+                <Route path="/acerca" element={<Acerca/>} />
+                <Route path="/contacto" element={<Contacto/>} />
+           </Routes>    
+        </div>
+        <div>
+            <BotonLogin/>
         </div>
     </div>
   )
